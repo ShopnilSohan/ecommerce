@@ -1,7 +1,9 @@
-import 'package:ecommerce/signin.dart';
+import 'package:ecommerce/splash.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 void main(){
   runApp(ShopTown());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.transparent));
 }
 class ShopTown extends StatelessWidget {
 
@@ -9,7 +11,7 @@ class ShopTown extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MySigin(),
+      home: Splash(),
     );
   }
 }
